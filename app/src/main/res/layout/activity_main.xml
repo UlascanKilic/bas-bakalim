@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ulas_.deneme2.MainActivity">
+
+    <VideoView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/splash_bg"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="-100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="283dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+           >
+
+            <ImageView
+                android:id="@+id/imgTema"
+                android:layout_width="15dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+              />
+
+            <TextView
+                android:id="@+id/kullaniciAdi"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+               />
+
+            <TextView
+                android:id="@+id/txtSeviye"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textAlignment="center"
+              />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/buttonBasla"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:height="60dp"
+                android:background="@mipmap/play_btn"
+                android:textColor="#fff"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonYuksekSkor"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@mipmap/rank_btn"/>
+
+            <Button
+                android:id="@+id/buttonCikis"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@mipmap/off_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="141dp"
+            app:srcCompat="@mipmap/logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"/>
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

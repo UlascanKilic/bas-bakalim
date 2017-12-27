@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/home_bg"
+    tools:context="com.example.ulas_.deneme2.KayitOl">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtHosgeldin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_weight="0.01"
+            android:text="@string/hosgeldinYazi"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editTxtKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:ems="5"
+            android:hint="Kullanici Adi"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnKullaniciKaydet"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+
+            android:background="@mipmap/kayitol" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

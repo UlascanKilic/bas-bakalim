@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutBaba"
+    tools:context="com.example.ulas_.deneme2.OyunModuNormal"
+    android:background="@mipmap/sparkaplan"
+   >
+
+    <FrameLayout
+        android:id="@+id/anaSayfaFrame"
+        android:layout_width="393dp"
+        android:layout_height="576dp"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <ImageView
+            android:id="@+id/sayacTiklama"
+            android:layout_width="116dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="130dp"
+
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <ImageView
+            android:id="@+id/sayacTikla"
+            android:layout_width="116dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageView
+            android:id="@+id/sayacHediye"
+            android:layout_width="116dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="250dp"
+            app:srcCompat="@mipmap/hediye" />
+
+        <TextView
+            android:id="@+id/textPuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="23dp"
+            android:text="0"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textTiklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="23dp"
+            android:text="0"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textHediye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="23dp"
+            android:text="0"
+            android:textColor="#fff" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/oyunArkaLayout"
+        android:layout_width="382dp"
+        android:layout_height="475dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/buttonTiklaSol"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/buttonTiklaOrta"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textSayac" />
+
+        <ImageButton
+            android:id="@+id/buttonTiklaSag"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+         android:layout_marginLeft="7dp"
+            android:adjustViewBounds="false"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textSayac" />
+
+        <TextView
+            android:id="@+id/textSayac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

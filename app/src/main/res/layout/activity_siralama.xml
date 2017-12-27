@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@mipmap/siralamabg"
+    tools:context="com.example.ulas_.deneme2.Siralama">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="310dp"
+        android:layout_height="460dp"
+        android:layout_marginBottom="72dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="36dp"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="35dp">
+
+        <ListView
+            android:id="@+id/Liste"
+            android:layout_width="315dp"
+            android:layout_height="399dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center" />
+
+        <LinearLayout
+            android:id="@+id/k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.69"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Profil"
+
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="0.85"
+                android:paddingTop="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="-23dp"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="516dp">
+
+        <Button
+            android:id="@+id/Listele"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/normalsiralama"
+            android:layout_weight="1"
+           />
+
+        <Button
+            android:id="@+id/Listele2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/cehennemsiralama"
+           />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
